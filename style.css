@@ -16,10 +16,14 @@ body {
     margin: 0.3em;
 }
 
-.sectionStyle {
+.rowStyle {
     align-items: stretch;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.columnStyle div {
+    padding-left: 1em;
 }
 
 .wrapStyle {
