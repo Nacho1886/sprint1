@@ -1,34 +1,55 @@
 * {
     flex-direction: column;
-    padding: 8px;
-    margin: 10px;
+    padding: 15px;
+    margin: 15px;
     align-items: center;
     flex-wrap: nowrap;
 }
 
-body {/* 
-    align-items: center; */
+body {
     padding: auto;
     display: flex;
-    flex-basis: 98%;
 }
 
-.containers {/* 
-    align-items: center; */
-    width:98%;
+.containers {
+    width:100%;
     max-width: 1200px;
     background-color: black;
 }
 
-.paragraph1 {
-    background-color: yellow;
-    
-}
 
 .paragraph2 {
-    background-color: whitesmoke;
+    background-color: #fdb36b;
 }
 
 .rowStyle {
     flex-direction: row;
+    background-color: #fee228;
 }
+
+.orangeStyle {background-color: #f07b3f;}
+
+.yellowStyle1 {background-color: #fed460;}
+.yellowStyle2 {background-color: #fdc764;}
+
+.greyStyle {background-color: #2d4059;}
+
+.redStyle1 {background-color: #ea5455;}
+.redStyle2 {background-color: #fd7b54;}
+
+.blueStyle1 {background-color: #09506f;}
+.blueStyle2 {background-color: #61959c;}
+.blueStyle3 {background-color: #a3ddcb;}
+
+
+
+@media (min-width: 576px) {
+    .yellowStyle2 {background-color: #feea85;}
+    .redStyle2 {background-color: #f73f52;}
+    .blueStyle2 {
+        flex-grow: 0.5;
+        flex-shrink: 0.5;
+    }
+}
+
+@media (min-width: 768px) { .rowStyle {background-color: black;}}
