@@ -1,12 +1,15 @@
 * {
     flex-direction: column;
     flex-wrap: nowrap;
-    padding: 10px;
-    margin: 10px;
+    padding: 4.5px;
+    margin: 4.5px;
     align-items: center;
 }
 
-body {display: flex;}
+body {
+    display: flex;
+    height: 100%;
+}
 
 .containers {
     display: flex;
@@ -15,14 +18,64 @@ body {display: flex;}
     max-width: 1200px;
 }
 
+.header {/* 
+    width: 100%; */
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100%;
+    background-image: url("images/header.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* height: 30%; */
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+}
+
+.logo {
+    width: 80px;
+}
+
 .buttonNav {
     display: flex;
     flex-direction: row;
 }
 
+.shortStyle1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: row;
+}
+
+.containerText {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin-top: 40px;
+    padding-bottom: -20px;
+}
+
+.text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(253, 208, 6, 0.6);
+    font-size: 100%;
+}
+
+svg {
+    width: 20px;
+    
+}
+
 .rowStyle {
     display: flex;
-    
     align-items: stretch;
 }
 
