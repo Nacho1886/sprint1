@@ -6,9 +6,7 @@
     align-items: center;
 }
 
-body {
-    display: flex;
-}
+body {display: flex;}
 
 .containers {
     display: flex;
@@ -19,9 +17,7 @@ body {
 }
 
 
-.paragraph2 {
-    background-color: #fdb36b;
-}
+.paragraph {background-color: #fdb36b;}
 
 .rowStyle {
     display: flex;
@@ -29,12 +25,8 @@ body {
     align-items: stretch;
 }
 
-.shortStyle2 {
-    flex: 1 1 40%;
-}
-.longStyle2 {
-    flex: 1 1 100%;
-}
+.shortStyle2 {flex: 1 1 40%;}
+.longStyle2 {flex: 1 1 100%;}
 
 .orangeStyle {background-color: #f07b3f;}
 
@@ -53,7 +45,6 @@ body {
 
 
 @media (min-width: 576px) {
-    .yellowStyle2 {background-color: #feea85;}
     .redStyle2 {background-color: #f73f52;}
     
     .rowStyle {
