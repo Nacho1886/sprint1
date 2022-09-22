@@ -64,6 +64,7 @@ h4 {
 .logo {
     width: auto;
     max-width: 80px;
+    animation: moveTop 1s ease-in;
 }
 
 img {
@@ -74,11 +75,11 @@ img {
     display: flex;
     flex-direction: row;
     width: auto;
+    animation: moveRight 1s ease-in;
 }
 
 .socialMedia {
-    display: flex;
-    flex-direction: row;
+    animation: moveLeft 1s ease-in;
 }
 
 .bigContainerText {
@@ -118,6 +119,7 @@ svg {
 
 .longStyle3 {
     background-color: #d8d7d7;
+    animation: moveLeft 1s ease-in;
 }
 
 .shortStyle2 {
@@ -169,6 +171,7 @@ p {
     align-items: stretch;
     height: auto;
     background-color: #d8d7d7;
+    animation: moveRight 1s ease-in;
 }
 
 .marginStyle {
@@ -203,6 +206,7 @@ p {
 
 .read {
     color: #808080;
+    margin: 14px;
 }
 
 .finalPost {
@@ -212,6 +216,7 @@ p {
 .copyrightContainer {
     background-color: #d8d7d7;
     align-items: center;
+    animation: moveButtom 1s ease-in;
 }
 
 .copyright {
@@ -238,6 +243,7 @@ p {
     
     .containerText {
         display: block;
+        animation: moveButtom 1s ease-in;
     }
 
     h4 {
@@ -246,6 +252,18 @@ p {
 
     .mainText {
         flex-direction: row;
+    }
+
+    .logo {
+        animation: moveLeft 1s ease-in;
+    }
+
+    .buttonNav {
+        animation: moveTop 1s ease-in;
+    }
+    
+    .socialMedia {
+        animation: moveRight 1s ease-in;
     }
 }
 
@@ -269,4 +287,23 @@ p {
         margin-left: 10px;
         margin-top: 0;
     }
+}
+
+
+@keyframes moveLeft {
+    0% { opacity: 0; transform: translateX(-100px);}
+    100% { opacity: 1; transform: translateX(0);}
+}
+
+@keyframes moveTop {
+    0% { opacity: 0; transform: translateY(-100px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+@keyframes moveButtom {
+    0% { opacity: 0; transform: translateY(100px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+@keyframes moveRight {
+    0% { opacity: 0; transform: translateX(100px);}
+    100% { opacity: 1; transform: translateX(0);}
 }
