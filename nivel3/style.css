@@ -1,15 +1,17 @@
-* {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
+body {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
 }
 
-body {
-    height: 100%;
+main {
+    place-self: center;
+    max-width: 1200px;
+    grid-column: 2;
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
     gap: 10px;
+    align-items: center;
 }
 
 header, section, footer {
@@ -19,7 +21,6 @@ header, section, footer {
 .containers {
     align-items: stretch;
     width:100%;
-    max-width: 1200px;
 }
 
 .header {
@@ -178,9 +179,7 @@ p {
 }
 
 .shortStyle3 {
-    display: grid;
-    align-items: stretch;
-    height: auto;
+    align-items: flex-start;
     background-color: #d8d7d7;
     animation: moveRight 1s ease-in;
 }
@@ -320,6 +319,15 @@ p {
         grid-template-rows: repeat(3, auto);
         height: 100%;
     }
+
+    .longStyle3 {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .finalPost {
+        grid-column: 1 / span 2;
+    }
 }
 
 @media (min-width: 768px) { 
@@ -327,13 +335,33 @@ p {
         background-size: 105%;
     }
 
-    .containerText {
-        margin-top: 40px;
-        padding-top: 15px;
+    .logoContainer {
+        grid-column: 1;
+    }
+    
+    .menuContainer {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .socialMedia {
+        grid-column: 3;
+    }
+    
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
     }
 
-    .longStyle3 {flex: 2 1;}
-    .shortStyle3 {flex: 0.6 1;}
+    .longStyle3 {
+        flex: 2 1;
+        grid-column: 1 / span 4;
+    }
+
+    .shortStyle3 {
+        flex: 0.6 1;
+    }
 
     .text {
         font-size: 100%;
